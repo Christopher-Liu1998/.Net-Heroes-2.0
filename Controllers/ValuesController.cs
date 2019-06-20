@@ -39,7 +39,7 @@ namespace myservice.Controllers
         [HttpPost]
         public JsonResult Post([FromBody] Hero value)
         {
-            int id = HeroList.getInsance().genId();
+            int id = HeroList.getInstance().genId();
             value.Id = id;
             HeroList.getInstance().addHero(value);
             Console.WriteLine("Added " + value.Name);

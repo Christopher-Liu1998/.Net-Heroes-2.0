@@ -57,6 +57,6 @@ public class HeroList
     }
 
     public int genId() {
-        return HeroList.Count + 1;
+        return heros.Count + 1;
     }
 }
